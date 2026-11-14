@@ -112,7 +112,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(246,249,253,.88);backdro
 .svc.featured{grid-column:1/-1;background:var(--tea-soft);border-color:transparent;display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center}
 .svc.featured ul{margin-top:16px}
 .svc-photo{border-radius:16px;overflow:hidden}
-.svc-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.svc-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
 .svc .cover{margin:-28px -28px 20px;aspect-ratio:16/9;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
 .svc .cover img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
 .svc .icon{font-size:2rem;margin-bottom:8px}
@@ -131,9 +131,13 @@ header{position:sticky;top:0;z-index:20;background:rgba(246,249,253,.88);backdro
 .step p{margin:0;color:var(--muted);font-size:.95rem}
 
 
+/* feedback */
+.fb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;align-items:start}
+.fb-grid img{width:100%;height:auto;border-radius:16px;box-shadow:0 14px 30px -16px rgba(31,42,55,.35)}
+
 /* faq */
 .faq{background:var(--surface)}
-.faq-grid{display:grid;grid-template-columns:1.4fr .9fr;gap:48px;align-items:start;margin-top:36px}
+.faq-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:start;margin-top:36px}
 .faq-photo{border-radius:var(--radius);overflow:hidden;position:sticky;top:90px}
 .faq-photo img{width:100%;height:auto}
 details{border-bottom:1px solid var(--line);padding:6px 0}
@@ -165,6 +169,7 @@ footer p{margin:4px 0}
   .nav ul{display:none}
   .hero-grid,.about-grid,.svc.featured,.faq-grid,.video-grid{grid-template-columns:1fr}
   .video-grid{gap:28px}
+  .fb-grid{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto}
   .about-photo,.faq-photo{position:static;max-width:420px;width:100%;margin:0 auto}
   .faq-photo{order:-1}
   .faq-photo img{aspect-ratio:4/3}
@@ -216,7 +221,7 @@ footer p{margin:4px 0}
       </div>
       <div class="portrait-wrap">
         <div class="portrait">
-          <img src="images/profile.jpg" alt="茶茶 劉芷廷形象照" width="1052" height="1495" fetchpriority="high" onerror="this.remove()">
+          <img src="images/profile.jpg" alt="茶茶 劉芷廷形象照" width="960" height="1200" fetchpriority="high" onerror="this.remove()">
           <div class="ph" aria-hidden="true"><span class="big">茶</span>形象照放這裡<br>images/profile.jpg</div>
         </div>
         <div class="badge"><strong>250+</strong>位朋友省下電信高額資費</div>
@@ -240,7 +245,7 @@ footer p{margin:4px 0}
       <h2 class="section-title">重新設計人生的斜槓女孩</h2>
       <p class="lead">我相信每個人都不只有一種樣子。做喜歡的事、幫身邊的人把生活過得更省心，就是我的工作。</p>
       <div class="about-grid">
-        <div class="about-photo"><img src="images/about.jpg" alt="茶茶 劉芷廷全身形象照" width="800" height="1200" loading="lazy"></div>
+        <div class="about-photo"><img src="images/about.jpg" alt="茶茶 劉芷廷全身形象照" width="960" height="1466" loading="lazy"></div>
         <div class="about-right">
         <div class="about-text">
           <p>以前的我是一名會計，每天和數字打交道。後來離開職場，我決定不再只選一條路，轉身成為自由工作者，把擅長的事一件件做成服務。</p>
@@ -309,7 +314,7 @@ footer p{margin:4px 0}
             <li>常跑跳雙北，其他縣市也可預約實體辦理</li>
           </ul>
           </div>
-          <div class="svc-photo"><img src="images/telecom.jpg" alt="茶茶拿著平板說明資費比較" width="1200" height="900" loading="lazy"></div>
+          <div class="svc-photo"><img src="images/telecom.jpg" alt="茶茶拿著平板說明資費比較" width="960" height="1200" loading="lazy"></div>
         </div>
         <div class="svc">
           <div class="icon">🛡️</div>
@@ -322,7 +327,6 @@ footer p{margin:4px 0}
           <p>七年經驗，從居家清潔、保養到生活必需品，幫你挑到好用又划算的東西。</p>
         </div>
         <div class="svc">
-          <div class="cover"><img src="images/reptile.jpg" alt="茶茶照顧守宮" width="1200" height="900" loading="lazy"></div>
           <div class="icon">🦎</div>
           <h3>爬爬居家照顧</h3>
           <p>出遊、出差時家裡的爬爬沒人顧？十多年飼養經驗，讓你放心。</p>
@@ -351,7 +355,19 @@ footer p{margin:4px 0}
     </div>
   </section>
 
-  <!-- TESTIMONIALS: 待提供真實客戶回饋後再加入 -->
+  <!-- TESTIMONIALS -->
+  <section id="feedback">
+    <div class="wrap">
+      <div class="eyebrow">FEEDBACK</div>
+      <h2 class="section-title">客戶回饋</h2>
+      <p class="lead">謝謝每一位願意信任我的朋友。</p>
+      <div class="fb-grid">
+        <img src="images/feedback-1.jpg" alt="客戶回饋：謝謝你！你的服務很清楚快速" width="1126" height="1454" loading="lazy">
+        <img src="images/feedback-2.jpg" alt="客戶回饋：提醒客戶使用點數，差點就浪費了" width="632" height="1030" loading="lazy">
+        <img src="images/feedback-3.jpg" alt="客戶回饋：感謝幫我申辦，今天拿到耳機了開心" width="1046" height="1564" loading="lazy">
+      </div>
+    </div>
+  </section>
 
   <!-- FAQ -->
   <section id="faq" class="faq">
@@ -397,7 +413,6 @@ footer p{margin:4px 0}
       </div>
       <p class="faq-note">以上為一般性說明，實際方案、優惠與規定請以各電信業者官方公告為準。</p>
       </div>
-      <div class="faq-photo"><img src="images/faq.jpg" alt="茶茶親切解答常見問題" width="1200" height="900" loading="lazy"></div>
       </div>
     </div>
   </section>
