@@ -114,9 +114,13 @@ header{position:sticky;top:0;z-index:20;background:rgba(246,249,253,.88);backdro
 .svc{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:var(--bg);position:relative}
 .svc.featured{grid-column:1/-1;background:var(--tea-soft);border-color:transparent;display:grid;grid-template-columns:1.7fr 1fr;gap:32px;align-items:center}
 .svc.featured ul,.svc p+ul{margin-top:16px}
+.ins-cols{display:grid;grid-template-columns:1fr 1fr;column-gap:24px;margin-top:16px}
+.ins-cols ul{margin:0}
+.ins-cols ul+ul{border-left:1px solid var(--line);padding-left:calc(1.2em + 24px)}
+@media (max-width:520px){.ins-cols{column-gap:12px}.ins-cols ul+ul{padding-left:calc(1.2em + 12px)}}
 .svc.featured{overflow:hidden}
 .svc-photo{position:relative;align-self:stretch;margin:-28px -28px -28px 0;overflow:hidden}
-.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%}
+.svc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:right bottom}
 @media (max-width:860px){.svc-photo{margin:0 -28px -28px}.svc-photo img{position:static;aspect-ratio:4/5;object-position:center top}}
 .svc .cover{margin:-28px -28px 20px;aspect-ratio:16/9;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
 .svc .cover img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
@@ -319,13 +323,22 @@ footer p{margin:4px 0}
           <div class="icon">🛡️</div>
           <h3>保險諮詢</h3>
           <p>有保險相關的問題，歡迎私訊討論。</p>
-          <ul>
-            <li>醫療規劃</li>
-            <li>退休規劃</li>
-            <li>新生兒保障規劃</li>
-            <li>保單檢視</li>
-            <li>投資理財配置</li>
-          </ul>
+          <div class="ins-cols">
+            <ul>
+              <li>醫療規劃</li>
+              <li>退休規劃</li>
+              <li>新生兒保障規劃</li>
+              <li>保單檢視</li>
+              <li>投資理財配置</li>
+            </ul>
+            <ul>
+              <li>汽機車強制險</li>
+              <li>汽機車任意險</li>
+              <li>火災保險</li>
+              <li>旅行平安險</li>
+              <li>其他產險規劃</li>
+            </ul>
+          </div>
         </div>
         <div class="svc">
           <div class="icon">🛍️</div>
