@@ -136,6 +136,8 @@ header{position:sticky;top:0;z-index:20;background:rgba(246,249,253,.88);backdro
 .ask-a{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center}
 .ask-a .icon{margin:0}
 @media (max-width:860px){.ask-a{grid-template-columns:1fr}.ask-a .btn{justify-self:start}}
+.svc-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.svc-head .icon,.svc-head h3{margin:0}
 /* process */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;counter-reset:s}
 .step{background:var(--surface);border-radius:var(--radius);padding:28px;border:1px solid var(--line);counter-increment:s}
@@ -324,8 +326,7 @@ footer p{margin:4px 0}
           <div class="svc-photo"><img src="images/telecom.jpg?v=2" alt="茶茶拿著平板說明資費比較" width="960" height="1200" loading="lazy"></div>
         </div>
         <div class="svc">
-          <div class="icon"><img src="images/icon-insurance.png" alt="" width="48" height="48" style="width:48px;height:48px;display:block"></div>
-          <h3>保險諮詢</h3>
+          <div class="svc-head"><div class="icon"><img src="images/icon-insurance.png" alt="" width="48" height="48" style="width:48px;height:48px;display:block"></div><h3>保險諮詢</h3></div>
           <p>有保險相關的問題，歡迎私訊討論。</p>
           <div class="ins-cols">
             <ul>
