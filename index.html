@@ -136,6 +136,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(246,249,253,.88);backdro
 .ask-a{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center}
 .ask-a .icon{margin:0}
 @media (max-width:860px){.ask-a{grid-template-columns:1fr}.ask-a .btn{justify-self:start}}
+.svc-img img{width:100%;height:auto;display:block}
 /* process */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;counter-reset:s}
 .step{background:var(--surface);border-radius:var(--radius);padding:28px;border:1px solid var(--line);counter-increment:s}
@@ -323,38 +324,8 @@ footer p{margin:4px 0}
           </div>
           <div class="svc-photo"><img src="images/telecom.jpg?v=2" alt="茶茶拿著平板說明資費比較" width="960" height="1200" loading="lazy"></div>
         </div>
-        <div class="svc">
-          <div class="icon">🛡️</div>
-          <h3>保險諮詢</h3>
-          <p>有保險相關的問題，歡迎私訊討論。</p>
-          <div class="ins-cols">
-            <ul>
-              <li>醫療規劃</li>
-              <li>退休規劃</li>
-              <li>新生兒保障規劃</li>
-              <li>保單檢視</li>
-              <li>投資理財配置</li>
-            </ul>
-            <ul>
-              <li>汽機車強制險/任意險</li>
-              <li>火災保險</li>
-              <li>旅行平安險</li>
-              <li>企業團險</li>
-              <li>其他產險規劃</li>
-            </ul>
-          </div>
-        </div>
-        <div class="svc">
-          <div class="icon">🛍️</div>
-          <h3>整合消費服務顧問</h3>
-          <p>七年經驗，從居家清潔、保養到生活必需品，幫你挑到好用又划算的東西。</p>
-          <ul>
-            <li>肌膚保養：一對一諮詢，找到肌膚問題與適合保養方式</li>
-            <li>居家清潔：酵素分解配方，溫和不咬手又省力。</li>
-            <li>保健/調整體態：提供營養課程，必要時轉介具專業背景的人員諮詢</li>
-            <li>生活大小事：各種省錢小妙招</li>
-          </ul>
-        </div>
+        <div class="svc-img"><img src="images/card-insurance.webp" alt="保險諮詢：有保險相關的問題，歡迎私訊討論。醫療規劃、退休規劃、新生兒保障規劃、保單檢視、投資理財配置；汽機車強制險/任意險、火災保險、旅行平安險、企業團險、其他產險規劃" width="1000" height="750" loading="lazy"></div>
+        <div class="svc-img"><img src="images/card-consumer.webp" alt="整合消費服務顧問：七年經驗，從居家清潔、保養到生活必需品，幫你挑到好用又划算的東西。肌膚保養：一對一諮詢，找到肌膚問題與適合保養方式；居家清潔：酵素分解配方，不咬手又省力，對環境也更友善；保健/調整體態：提供營養課程，必要時轉介具專業背景的人員諮詢；生活大小事：各種省錢小妙招" width="1000" height="750" loading="lazy"></div>
         <div class="svc ask-a">
           <div class="icon">☕</div>
           <div><h3>不知道從哪問起？</h3><p>想省錢、想發展斜槓增加多元收入，或生活中任何想找人商量的事，都可以先丟給我，我會告訴你可以怎麼做。</p></div>
